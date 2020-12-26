@@ -1,0 +1,79 @@
+.card {
+  height: 240px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: $shadow;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  .card-header {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    .job-title {
+      font-size: 18px;
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 5px;
+    }
+
+    .company-name {
+      display: flex;
+      align-items: flex-end;
+      .company-image {
+        margin-right: 5px;
+        padding: 3px;
+        border-radius: 8px;
+        height: 24px;
+        width: 24px;
+      }
+    }
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 1em 0;
+    padding: 0;
+  }
+
+  .card-body {
+    p {
+      font-size: 14px;
+    }
+  }
+
+  &-primary {
+    color: #fff;
+    background-color: lighten($color: $primary, $amount: 15);
+    border: 1px solid $primary;
+    .company-name {
+      .company-image {
+        background-color: $secondary;
+      }
+    }
+
+    hr {
+      border-top: 1px solid $secondary;
+    }
+  }
+  &-secondary {
+    background-color: lighten($color: $secondary, $amount: 25);
+    border: 1px solid $secondary;
+    .company-name {
+      .company-image {
+        background-color: $primary;
+      }
+    }
+
+    hr {
+      border-top: 1px solid $primary;
+    }
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

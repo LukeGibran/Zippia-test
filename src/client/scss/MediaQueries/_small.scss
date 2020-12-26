@@ -1,0 +1,32 @@
+@include mediaSm {
+  .main {
+    .svg-image-person {
+      display: none;
+    }
+  }
+  .title {
+    margin-bottom: 50px;
+    flex-direction: column;
+    .svg-image {
+      height: 250px;
+      width: 250px;
+    }
+  }
+
+  .button-section {
+    .buttons {
+      flex-direction: column;
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-bottom: 10px;
+    }
+  }
+
+  .job-section {
+    .all-jobs {
+      grid-template-columns: 1fr;
+    }
+  }
+}

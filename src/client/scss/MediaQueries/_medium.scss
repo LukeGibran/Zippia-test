@@ -1,0 +1,12 @@
+@include mediaMd {
+  .main {
+    .svg-image-person {
+      display: none;
+    }
+  }
+  .job-section {
+    .all-jobs {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

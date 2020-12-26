@@ -1,0 +1,25 @@
+.job-section {
+  margin-bottom: 2%;
+  .job-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+    h3 {
+      margin-right: 15px;
+    }
+
+    p {
+      background-color: $danger;
+      color: #fff;
+      font-style: italic;
+      padding: 5px 8px;
+      border-radius: 10px;
+    }
+  }
+
+  .all-jobs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+  }
+}

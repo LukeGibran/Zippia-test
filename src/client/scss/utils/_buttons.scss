@@ -1,0 +1,41 @@
+.btn {
+  border: none;
+  padding: 15px 20px;
+  width: 200px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  img {
+    flex-shrink: 1;
+    margin-right: 5px;
+  }
+
+  &-primary {
+    background-color: $primary;
+  }
+  &-secondary {
+    background-color: $secondary;
+  }
+  &-tertiary {
+    background-color: $tertiary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.active {
+    transform: scale(0.8);
+  }
+}

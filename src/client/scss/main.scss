@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+// Variable to be use
+@import 'variables';
+
+// Styles for each components
+@import './components/header';
+@import './components/titleSection';
+@import './components/buttonSection';
+@import './components/jobSection';
+
+// Styles for the utilities
+@import './utils/buttons';
+@import './utils/_card.scss';
+@import './utils/loader';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $black;
+}
+
+.main {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .svg-image-person {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    z-index: -1;
+  }
+}
+
+// Scrollbars
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $primary;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $secondary;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($secondary, 10);
+}
+
+@import './MediaQueries/all';
